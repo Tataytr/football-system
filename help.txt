@@ -1,0 +1,31 @@
+
+
+conda install -c conda-forge mamba
+
+y
+
+git clone https://github.com/alievk/avatarify
+
+
+cd avatarify
+
+call scripts\settings_windows.bat
+
+call conda create -y -n %CONDA_ENV_NAME% python=3.8
+
+call conda activate %CONDA_ENV_NAME%
+
+call mamba install -y numpy==1.19.0 scikit-image python-blosc==1.7.0 -c conda-forge
+
+call conda install -y -c anaconda giti
+
+git clone https://github.com/alievk/first-order-model.git fomm
+
+call rmdir fomm /s /q
+
+git clone https://github.com/alievk/first-order-model.git fomm
+
+call pip install -r requirements.txt
+
+pip install pillow==9.5.0
+
